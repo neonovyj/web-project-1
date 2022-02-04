@@ -12,7 +12,7 @@ document.getElementById('generate').onclick = generate;
 function generate(){
   custom();
   doPswrd();
-  document.getElementById('generate2').innerHTML = pswrd;
+
 }
 
 
@@ -45,9 +45,13 @@ if (chbox_special.checked) {
 function doPswrd(){
   var pswrd = '';
   var length1 = document.getElementById('passLength').value;
-  console.log(length1);
+  if (length1 > 25){
+    length1 = 24;
+  }
+  //console.log(length1);
   while (pswrd.length < length1) {
     pswrd += symbols[Math.floor(Math.random() * symbols.length)];
   }
-  console.log(pswrd);
+  document.getElementById('generate2').innerHTML = pswrd;
+  //console.log(pswrd);
 }
