@@ -1,18 +1,3 @@
-//let a = 0;
-//var a = document.getElementById('passLength').oninput.value;
-//
-// generatePass();
-//butt.onclick = function() {
-  //  var val = document.getElementById('elem1').value;
-    //document.getElementById('str').innerHTML="Вы ввели: "+val;
-//};
-// function lox(){
-// var val = document.getElementById('elem1').value;
-// console.log(val);
-// }
-// lox();
-
-
 var pswrd;
 var length;
 var symbols;
@@ -20,7 +5,7 @@ const ASCII_LETTERS = 'abcdefghijklnopqrstuvwxyz';
 const ASCII_UPPERCASE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const DIGITS = '0123456789';
 const PUNCTUATION = '+-/*!&$#?=@<>';
-//length = ASCII_LETTERS + DIGITS;
+
 
 document.getElementById('generate').onclick = generate;
 
@@ -31,12 +16,7 @@ function generate(){
 }
 
 
-
-
-
-
 function custom(){
-
 symbols = ASCII_LETTERS;
 var chbox_uppercase;
 chbox_uppercase=document.getElementById('uppercase');
@@ -63,10 +43,10 @@ if (chbox_special.checked) {
 
 
 function doPswrd(){
-  var length = document.getElementById('passLength').value;
-
-
-  while (pswrd.length < length) {
+  var pswrd = '';
+  var length1 = document.getElementById('passLength').value;
+  console.log(length1);
+  while (pswrd.length < length1) {
     pswrd += symbols[Math.floor(Math.random() * symbols.length)];
   }
   console.log(pswrd);
