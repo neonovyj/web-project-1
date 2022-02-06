@@ -4,33 +4,52 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Password Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="wrapper">
+      <h1>Password Generator</h1>
+      <p>Generate a secure password.</p>
 
-    <div class="generate">
-      <button type="button" name="button" id="generate">Generate</button>
-      <h2 id="generate2"></h2>
-    </div>
-
-    <div class="custom">
-      Password Length:<input class="number" type="number" name="passLength" id="passLength" value="8" min="1" max="24">
-      <div class="chckbox">
-        <label class="checkbox">
-          <input name="uppercase" type="checkbox" id="uppercase"  checked="checked"/>
-          <div class="checkbox__text">Enable uppercase letters</div>
-        </label>
-        <label class="checkbox">
-          <input name="digit" type="checkbox" id="digit" checked="checked"/>
-          <div class="checkbox__text">Enable digits</div>
-        </label>
-        <label class="checkbox">
-          <input name="special" id="special" type="checkbox"/>
-          <div class="checkbox__text">Enable special symbols</div>
-        </label>
-        </div>
+      <div class="generate">
+        <button type="button" name="button" id="generate">Generate</button>
+        <h2 id="generate2"></h2>
       </div>
 
-    <script src="js/generator.js"></script>
+      <div class="custom">
+
+        <h3>Customize password</h3><br>
+        <div class="change">
+          <div class="text-field">
+          Password Length:<input class="number" type="number" name="passLength" id="passLength" value="8" min="1" max="24">
+            </div>
+
+          <div class="chckbox">
+              <label class="checkbox">
+                <input name="uppercase" type="checkbox" id="uppercase"  checked="checked"/>
+                <div class="checkbox__text">Enable uppercase letters</div>
+
+              </label>
+              <label class="checkbox">
+                <input name="digit" type="checkbox" id="digit" checked="checked"/>
+                <div class="checkbox__text">Enable digits</div>
+              </label>
+              <label class="checkbox">
+                <input name="special" id="special" type="checkbox"/>
+                <div class="checkbox__text">Enable special symbols</div>
+              </label>
+
+              
+</div>
+            </div>
+          </div>
+      </div>
+      <script src="js/generator.js"></script>
   </body>
 </html>
