@@ -38,6 +38,12 @@ html {
 
 @media (max-width: 767.98px) {
     .wrapper{
+        max-width: 405px;
+    }
+}
+
+@media (max-width: 425.98px) {
+    .wrapper{
         max-width: none;
     }
 }
@@ -128,7 +134,7 @@ h3 {
 
 .generate{
     margin-top:120px;
-    min-width: 710px;
+    /*min-width: 710px;*/
     min-height: 56px;
     position: relative;
     display: flex;
@@ -161,7 +167,7 @@ button{
 .custom{
     font-family: 'Open Sans', sans-serif;
     margin-top:16px;
-    min-width: 710px;
+    /*min-width: 710px;*/
     min-height: 168px;
     position: relative;
     padding: 8px 40px;
